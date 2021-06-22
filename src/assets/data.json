@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "title": "React exam",
+      "description": "Make To-Do-List using React",
+      "dead_line": "22.06.2021",
+      "completed": 1,
+      "order": 1
+    },
+    {
+      "title": "English lesson",
+      "description": "Unit 9.2 ex.5-8. Write text about your first job interview",
+      "dead_line": "24.06.2021",
+      "completed": 0,
+      "order": 2
+    }
+  ]
+}

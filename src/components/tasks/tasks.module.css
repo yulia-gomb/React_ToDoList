@@ -1,0 +1,29 @@
+.tasks {
+  background-color: #ffffff;
+  flex: 4;
+  padding: 45px 30px;
+  border: 2px solid #2d405d;
+}
+.tasks h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.tasks button {
+  padding: 3px 5px;
+  background-color: #ffc20e;
+}
+.tasks button:hover {
+  background-color: #00cca5;
+}
+.task {
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+.task button {
+  margin: 5px 10px 5px 0px;
+}
+span {
+  font-weight: bold;
+}
