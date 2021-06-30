@@ -10,14 +10,3 @@ body {
   font-family: DialogInput, sans-serif;
   font-size: 20px;
 }
-
-.wrapper {
-  margin: 50px 15% 20px 15%;
-  background-color: #3793ff;
-  padding: 40px;
-  border: 2px solid #2d405d;
-}
-.todo {
-  display: flex;
-  min-height: 1200px;
-}

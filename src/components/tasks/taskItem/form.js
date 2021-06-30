@@ -7,10 +7,7 @@ export default function TodosForm(props) {
   const form = useRef(null);
 
   const handleSubmit = (e) => {
-    alert(
-      "submit не работает, получаю ошибку 500. " +
-        "При этом через Postman запрос POST срабатывает, данные сохраняются на сервере"
-    );
+    alert("submit");
     e.preventDefault();
     const data = new FormData(form.current);
 
@@ -26,32 +23,19 @@ export default function TodosForm(props) {
       .then((json) => setTask(json.task));
   };
 
-  /*
-     data: {
-       title: "YOUR_TITLE",
-       description: "YOUR_DESCRIPTION",
-       dead_line: 20210101,
-       completed: 1,
-       order: 4,
-     },
-*/
   return (
     <div>
       <form className={style.form} onSubmit={handleSubmit} ref={form}>
         <h2>Add new task</h2>
         <input
           type="text"
-          name="task[title]"
+          name="title"
           placeholder="Title"
           //defaultValue="Exam"
         />
-        <input
-          type="datetime-local"
-          name="task[dead_line]"
-          placeholder="Deadline"
-        />
+        <input type="datetime-local" name="dead_line" placeholder="Deadline" />
         <textarea
-          name="task[description]"
+          name="description"
           placeholder="Description"
           //defaultValue="Urgent task"
         />
