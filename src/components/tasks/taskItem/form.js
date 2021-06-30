@@ -20,25 +20,16 @@ export default function TodosForm(props) {
       body: data,
     })
       .then((data) => data.json())
-      .then((json) => setTask(json.task));
+      .then((json) => setTask(json));
   };
 
   return (
     <div>
       <form className={style.form} onSubmit={handleSubmit} ref={form}>
         <h2>Add new task</h2>
-        <input
-          type="text"
-          name="title"
-          placeholder="Title"
-          //defaultValue="Exam"
-        />
+        <input type="text" name="title" placeholder="Title" />
         <input type="datetime-local" name="dead_line" placeholder="Deadline" />
-        <textarea
-          name="description"
-          placeholder="Description"
-          //defaultValue="Urgent task"
-        />
+        <textarea name="description" placeholder="Description" />
         <input type="submit" value="Add" className={style.add} />
       </form>
     </div>

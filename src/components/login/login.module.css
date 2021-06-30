@@ -12,7 +12,7 @@
 
 .img {
   background-image: url("https://hygger.io/wp-content/uploads/2020/04/15.png");
-  height: 80vh;
+  height: 73vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -28,7 +28,8 @@
   padding: 5px 10px;
   text-align: center;
   color: white;
-  margin-left: 35%;
   border: 1px solid black;
   font-size: 1.1em;
+  width: 90px !important;
+  margin-left: 30%;
 }

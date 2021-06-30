@@ -10,6 +10,8 @@ export default function Tasks(props) {
 
   useEffect(() => {
     console.log("useEffect");
+    const token = localStorage.getItem("token");
+    console.log("token" + token);
 
     fetch("https://data.testxhr.com/api/todos", {
       method: "GET",
