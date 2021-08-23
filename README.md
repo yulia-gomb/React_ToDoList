@@ -1,2 +1,2 @@
 # React_ToDoList
-ToDo List App creating on React
+ToDo List App created on React
